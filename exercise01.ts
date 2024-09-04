@@ -1,39 +1,30 @@
 // EXERCISE 01
 
+
 // SOAL 1
 // Input panjang dan lebar
-let length = 5;
-let width = 3;
-
-// Menghitung luas
-let area = length * width;
-
-// Menampilkan hasil
-console.log("Luas persegi panjang adalah:", area);
-
+let l1 = 5;
+let p1 = 10;
+const luasPersegiPanjang: number = p1 * l1
+// Hasil
+console.log(luasPersegiPanjang); 
 
 // SOAL 2
 // Input panjang dan lebar
-let length = 5;
-let width = 3;
-
-// Menghitung keliling
-let perimeter = 2 * (length + width);
-
-// Menampilkan hasil
-console.log("Keliling persegi panjang adalah:", perimeter);
-
+l1 = 3;
+p1 = 5;
+const perimeterPersegiPanjang: number = 2 * (p1 + l1);
+// Hasil
+console.log(perimeterPersegiPanjang);
 
 // SOAL 3
 // Input jari-jari
 let radius = 5;
-
-// Menghitung diameter, keliling, dan luas
+// Menghitung Diameter, Keliling, dan Luas
 let diameter = 2 * radius;
 let circumference = 2 * Math.PI * radius;
 let area = Math.PI * Math.pow(radius, 2);
-
-// Menampilkan hasil
+// Hasil
 console.log("Diameter lingkaran adalah:", diameter);
 console.log("Keliling lingkaran adalah:", circumference);
 console.log("Luas lingkaran adalah:", area);
@@ -43,11 +34,10 @@ console.log("Luas lingkaran adalah:", area);
 // Input dua sudut
 let a = 80;
 let b = 65;
-
 // Menghitung sudut ketiga
 let c = 180 - (a + b);
 
-// Menampilkan hasil
+// Hasil
 console.log("Sudut ketiga adalah:", c);
 
 
@@ -63,3 +53,10 @@ let days_left = remaining_days % 30;
 
 // Menampilkan hasil
 console.log(`${days} hari = ${years} tahun, ${months} bulan, dan ${days_left} hari`);
+
+
+// SOAL 6
+const date1: Date = new Date ("2022-01-20");
+const date2: Date = new Date ("2022-03-30");
+const perbedaanDate = (date2.getTime() - date1.getTime()) / (24 * 3600 * 1000);
+console.log(perbedaanDate);
